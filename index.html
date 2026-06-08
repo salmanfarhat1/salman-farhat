@@ -5,14 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Salman Farhat - Cloud Architect and Researcher" />
         <meta name="author" content="Salman Farhat" />
-        <title>Salman Farhat | Cloud Architect & Researcher</title>
+        <title>Salman Farhat | Cloud Architect</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
@@ -21,7 +18,7 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Salman Farhat</span>
                 <span class="d-none d-lg-block">
-                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="me.jpg" alt="Salman Farhat Profile Photo" />
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/personal_photo.png" alt="Salman Farhat Profile Photo" />
                 </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,12 +30,16 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
                 </ul>
             </div>
         </nav>
+
         <!-- Page Content-->
         <div class="container-fluid p-0">
+
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
@@ -47,12 +48,11 @@
                         <span class="text-primary">Farhat</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Lille, France ·
+                        Lille, France · +33 6 65 20 29 27 ·
                         <a href="mailto:salmanfarhat098@gmail.com">salmanfarhat098@gmail.com</a>
                     </div>
                     <p class="lead mb-5">
-                        Cloud Architect and Researcher with expertise in distributed systems, cloud computing, and dynamic reconfiguration. 
-                        Currently working at Expleo after completing my PhD at Inria on safe dynamic reconfiguration of cloud applications.
+                        Cloud Architect with 6+ years of experience and a PhD in Computer Science, specializing in distributed systems and cloud-native infrastructure. Passionate about designing scalable, resilient systems.
                     </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/salman-farhat-b854b6181/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -62,122 +62,150 @@
                 </div>
             </section>
             <hr class="m-0" />
-            
+
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
-                    
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Cloud Architect / Ingénieur Docteur</h3>
-                            <div class="subheading mb-3">Expleo</div>
+                            <h3 class="mb-0">Cloud Solution Architect</h3>
+                            <div class="subheading mb-3">Expleo — Lille, France</div>
+                            <p>Technical lead for a team of 4 cloud engineers, designing, building, and deploying two production projects on Azure — a smart city simulation platform and a drone OTA update system.</p>
                             <ul>
-                                <li>Designed and implemented scalable cloud solutions using Azure services, reducing infrastructure costs by 50%</li>
-                                <li>Developed real-time data pipelines using Azure Event Hubs and WebSocket</li>
-                                <li>Built Lakehouse architecture for centralized data analytics</li>
-                                <li>Deployed Python microservices on HPC clusters and edge devices</li>
+                                <li><strong>Compute & Kubernetes Platform:</strong> Evaluated AKS, ACP, and VMSS against cost, scalability, and complexity; selected AKS as primary compute layer. Designed and built a production-grade cluster with dedicated node pools, RBAC, network policies, and HPA.</li>
+                                <li><strong>Microservices & API Architecture:</strong> Designed a fully containerized distributed system — Next.js frontend, Flask backend, and a Node.js real-time service consuming events from Azure Event Hubs and broadcasting via WebSockets — orchestrated on AKS with ingress controllers and Azure API Management as the unified external gateway.</li>
+                                <li><strong>Security & Zero-Trust:</strong> Applied zero-trust principles by storing sensitive credentials in Azure Key Vault and Kubernetes Secrets, with services retrieving secrets at runtime via the Key Vault SDK, and using Service Principals for secure, passwordless authentication to ACR and Azure resources.</li>
+                                <li><strong>Cost Governance:</strong> Cut Cosmos DB spend by 50%+ by analyzing RU/s consumption patterns via Azure Monitor, identifying an over-provisioning gap, and migrating collections to serverless pricing using Azure Data Factory pipelines with post-migration validation.</li>
+                                <li><strong>Certification:</strong> Passed Microsoft Azure Administrator Associate (AZ-104) during this role.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2024 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2024 – Present</span></div>
                     </div>
-                    
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">PhD Candidate</h3>
-                            <div class="subheading mb-3">Inria, SPIRALS Team</div>
+                            <div class="subheading mb-3">Inria, SPIRALS Team — Lille, France</div>
                             <ul>
-                                <li>Designed framework for safe dynamic reconfiguration of cloud applications</li>
-                                <li>Developed solution to manage reconfiguration requests for Heroku, AWS, GCP</li>
-                                <li>Simplified cloud app reconfiguration considering component dependencies</li>
+                                <li>Designed an innovative tool enabling dynamic reconfiguration of cloud applications, addressing operational challenges across major platforms (Heroku, AWS, Azure).</li>
+                                <li>Developed a comprehensive reconfiguration management solution that simplifies deployment updates by modeling and respecting component dependencies, reducing configuration drift and deployment errors.</li>
+                                <li>Presented the reconfiguration tool to cloud infrastructure companies for monitoring and managing datacenter operations at scale.</li>
+                                <li>Published multiple papers in international conferences (IEEE ICSA-C 2022, Coordination Models and Languages 2023) validating the reconfiguration management solution.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2020 - August 2024</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2020 – August 2024</span></div>
                     </div>
-                    
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Lecturer</h3>
-                            <div class="subheading mb-3">University of Lille</div>
-                            <p>Courses taught: Web Technology, Networks, Object-Oriented Programming, Distributed Systems, Shell Scripting</p>
+                            <div class="subheading mb-3">University of Lille — Lille, France</div>
+                            <p>Taught courses across multiple undergraduate and graduate programs: Web Technology, Networks, Object-Oriented Programming &amp; Design Patterns, Distributed Systems, and Shell Scripting.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2022 - August 2024</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2022 – August 2024</span></div>
                     </div>
-                    
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Research Intern</h3>
-                            <div class="subheading mb-3">LIG - Grenoble Informatics Laboratory</div>
+                            <div class="subheading mb-3">LIG, ERODS Team — Grenoble, France</div>
                             <ul>
-                                <li>Studied Byzantine failures in distributed learning systems</li>
-                                <li>Proposed algorithms to improve system resilience</li>
+                                <li>Contributed to enhancing resilience of distributed learning systems against Byzantine failures.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2020 - September 2020</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2020 – September 2020</span></div>
                     </div>
-                    
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Research Intern</h3>
+                            <div class="subheading mb-3">LIG, ERODS Team — Grenoble, France</div>
+                            <ul>
+                                <li>Extended Ipanema, a domain-specific language for multi-core process scheduling.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2019 – June 2019</span></div>
+                    </div>
+
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Full Stack Web Trainee</h3>
-                            <div class="subheading mb-3">SE Factory</div>
-                            <p>Completed intensive full-stack web development bootcamp</p>
+                            <h3 class="mb-0">Web Developer Intern</h3>
+                            <div class="subheading mb-3">SE Factory — Lebanon</div>
+                            <p>Completed a full-stack web development training program.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2018 - September 2018</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2018 – August 2018</span></div>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            
+
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Lille - Inria</h3>
+                            <h3 class="mb-0">University of Lille – Inria</h3>
                             <div class="subheading mb-3">PhD in Computer Science</div>
                             <div>Safe Dynamic Reconfiguration of Cloud Applications</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2020 - 2024</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">2020 – 2024</span></div>
                     </div>
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Grenoble Alpes University (ENSIMAG)</h3>
                             <div class="subheading mb-3">Master's in Computer Science</div>
                             <div>Parallel and Distributed Systems</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2018 - 2020</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">2018 – 2020</span></div>
                     </div>
+
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Lebanese University</h3>
                             <div class="subheading mb-3">B.E. in Computer Science</div>
+                            <div>Beirut, Lebanon</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2015 - 2018</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">2015 – 2018</span></div>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            
+
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
+
                     <div class="subheading mb-3">Programming Languages</div>
                     <ul class="fa-ul mb-3">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Java, Python, C, JavaScript, PHP, C#</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Go, Java, Python, C, JavaScript, OCaml, Assembly</li>
                     </ul>
-                    
-                    <div class="subheading mb-3">Cloud & DevOps</div>
+
+                    <div class="subheading mb-3">Cloud Platforms & Architecture</div>
                     <ul class="fa-ul mb-3">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>AWS, Azure, Docker, Kubernetes, Terraform, Ansible</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Azure (AKS, Event Hubs, Key Vault, API Management, Cosmos DB, Data Factory, Azure Monitor), AWS, Distributed Systems, Infrastructure as Code</li>
                     </ul>
-                    
+
+                    <div class="subheading mb-3">DevOps & Infrastructure</div>
+                    <ul class="fa-ul mb-3">
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Docker, Kubernetes, Terraform, CI/CD, GitHub Actions, Jenkins</li>
+                    </ul>
+
                     <div class="subheading mb-3">Frameworks & Tools</div>
                     <ul class="fa-ul mb-3">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>React.js, ASP.NET, Flask, Django, Git, GitHub Actions</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Next.js, React.js, Flask, Node.js, Git, Android Studio</li>
                     </ul>
-                    
+
+                    <div class="subheading mb-3">Databases</div>
+                    <ul class="fa-ul mb-3">
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>PostgreSQL, MySQL, Cosmos DB (NoSQL), Azure Storage Account</li>
+                    </ul>
+
                     <div class="subheading mb-3">Languages</div>
                     <ul class="fa-ul mb-0">
                         <li><span class="fa-li"><i class="fas fa-check"></i></span>French (Fluent), English (Fluent), Arabic (Native)</li>
@@ -185,28 +213,108 @@
                 </div>
             </section>
             <hr class="m-0" />
-            
+
+            <!-- Certifications -->
+            <section class="resume-section" id="certifications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Certifications &amp; Awards</h2>
+                    <ul class="fa-ul mb-4">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-certificate text-primary"></i></span><strong>Microsoft Certified: Azure Administrator Associate</strong> — AZ-104 · Microsoft</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-certificate text-primary"></i></span><strong>AWS Cloud Quest: Cloud Practitioner</strong> — Amazon Web Services</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-certificate text-primary"></i></span>AWS Fundamentals: Going Cloud-Native — Amazon Web Services / Coursera</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-certificate text-primary"></i></span>Cloud Computing Applications I: Systems &amp; Infrastructure — University of Illinois / Coursera</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-certificate text-primary"></i></span>Internet Connection — Cisco / Coursera</li>
+                    </ul>
+                    <div class="subheading mb-3">Distinctions</div>
+                    <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-trophy text-primary"></i></span>Participation in the International Collegiate Programming Contest (ICPC)</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-trophy text-primary"></i></span>Algorithm contest participant — LeetCode &amp; GeeksforGeeks</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-trophy text-primary"></i></span>Graduate Assistant Scholarship — American University of Beirut</li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- Projects -->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Chocolate E-Commerce Website</h3>
+                            <div class="subheading mb-2">Next.js · Go · PostgreSQL · Docker · Kubernetes · Jenkins CI/CD</div>
+                            <p>Designed and deployed a full-stack web platform containerized with Docker and orchestrated on Kubernetes. Comprises a Next.js frontend, Go backend, and PostgreSQL database, with a complete CI/CD pipeline using Jenkins. <a href="https://github.com/salmanfarhat1" target="_blank">View on GitHub →</a></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Chocolate Tempering Machine (IoT + Cloud)</h3>
+                            <div class="subheading mb-2">ESP32 · MQTT · Azure IoT Hub · PostgreSQL · Python</div>
+                            <p>Constructed a chocolate tempering machine from scratch, integrating an ESP32 to securely publish real-time telemetry via MQTT to Azure IoT Hub. Built a containerized backend consumer to ingest streaming data into PostgreSQL and implemented scheduled analytics to quantify the impact of water and ambient temperature on tempering dynamics.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Attendance Application</h3>
+                            <div class="subheading mb-2">OCR · Android Studio · Database Integration</div>
+                            <p>Developed an OCR-based system for the Lebanese University that scans and reads student ID cards to automatically record attendance into a database.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Multi-Threaded Social Network Server</h3>
+                            <div class="subheading mb-2">C · POSIX Threads · Sockets</div>
+                            <p>A multi-threaded server for social network use cases developed in C, handling concurrent client connections with POSIX threading.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Chat Application</h3>
+                            <div class="subheading mb-2">Java · RMI</div>
+                            <p>Messaging system built using Java Remote Method Invocation (RMI), demonstrating distributed object communication.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Travelling Salesman Problem — Parallel Genetic Algorithm</h3>
+                            <div class="subheading mb-2">MPI · OpenMP · C</div>
+                            <p>Parallel implementation of the genetic algorithm to solve the TSP, using MPI for distributed memory parallelism and OpenMP for shared memory parallelism.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
             <!-- Publications-->
             <section class="resume-section" id="publications">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Publications</h2>
                     <ul class="fa-ul mb-0">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-book text-primary"></i></span>
+                            S. Farhat, S. Bliudze and L. Duchien, <em>"Safe Dynamic Reconfiguration of Concurrent Component-based Applications,"</em> 2022 IEEE 19th International Conference on Software Architecture Companion (ICSA-C), Honolulu, HI, USA, 2022, pp. 108–111. doi: 10.1109/ICSA-C54293.2022.00027
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-book text-primary"></i></span>
+                            Salman Farhat, Simon Bliudze, Laurence Duchien, Olga Kouchnarenko. <em>"Run-time Coordination of Reconfiguration Requests in Cloud Computing Systems."</em> RR-9504, Inria. 2023. (hal-04085278v2)
+                        </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-book text-primary"></i></span>
-                            S. Farhat, S. Bliudze and L. Duchien, "Safe Dynamic Reconfiguration of Concurrent Component-based Applications," 2022 IEEE 19th International Conference on Software Architecture Companion (ICSA-C)
-                        </li>
-                        <li class="mt-2">
-                            <span class="fa-li"><i class="fas fa-book text-primary"></i></span>
-                            Farhat, Salman, et al. "Toward run-time coordination of reconfiguration requests in cloud computing systems." International Conference on Coordination Languages and Models. 2023.
+                            Farhat, Salman, et al. <em>"Toward run-time coordination of reconfiguration requests in cloud computing systems."</em> International Conference on Coordination Languages and Models. Cham: Springer Nature Switzerland, 2023.
                         </li>
                     </ul>
                 </div>
             </section>
+
         </div>
-        
-        <!-- Bootstrap core JS-->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
 </html>
